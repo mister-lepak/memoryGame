@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.099b345b.chunk.css",
+    "main.js": "./static/js/main.39698025.chunk.js",
+    "main.js.map": "./static/js/main.39698025.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.487a993d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.487a993d.js.map",
+    "static/js/2.cc3b48dc.chunk.js": "./static/js/2.cc3b48dc.chunk.js",
+    "static/js/2.cc3b48dc.chunk.js.map": "./static/js/2.cc3b48dc.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.099b345b.chunk.css.map": "./static/css/main.099b345b.chunk.css.map",
+    "static/js/2.cc3b48dc.chunk.js.LICENSE.txt": "./static/js/2.cc3b48dc.chunk.js.LICENSE.txt",
+    "static/media/bb8.317321ff.png": "./static/media/bb8.317321ff.png",
+    "static/media/c3po.d81a815c.png": "./static/media/c3po.d81a815c.png",
+    "static/media/chewbacca.d3504964.png": "./static/media/chewbacca.d3504964.png",
+    "static/media/leia.a13d3abc.png": "./static/media/leia.a13d3abc.png",
+    "static/media/obiwan.5402d34e.png": "./static/media/obiwan.5402d34e.png",
+    "static/media/r2d2.b73e16dc.png": "./static/media/r2d2.b73e16dc.png",
+    "static/media/ren.1e0db0d7.png": "./static/media/ren.1e0db0d7.png",
+    "static/media/starwars.636b863d.png": "./static/media/starwars.636b863d.png",
+    "static/media/stormtrooper.b0404485.png": "./static/media/stormtrooper.b0404485.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.487a993d.js",
+    "static/js/2.cc3b48dc.chunk.js",
+    "static/css/main.099b345b.chunk.css",
+    "static/js/main.39698025.chunk.js"
+  ]
+}
