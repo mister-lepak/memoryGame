@@ -6,11 +6,12 @@ import chewbacca from "../img/chewbacca.png";
 import r2d2 from "../img/r2d2.png";
 import c3po from "../img/c3po.png";
 import obiwan from "../img/obiwan.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Card = (props) => {
-  const { score, setScore } = props;
-
+  const { score, setScore, bestScore, setBestScore } = props;
+  const [valSequence, setValSequence] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
+  const [isRandomized, setIsRandomized] = useState(false);
   const [charName, setCharName] = useState([
     "BB-8",
     "KyloRen",
@@ -47,7 +48,6 @@ const Card = (props) => {
   let recordSet = [];
   let pickedCharSet = [false, false, false, false, false, false, false, false];
 
-  const [valSequence, setValSequence] = useState([0, 1, 2, 3, 4, 5, 6, 7]);
   const randomizeVal = () => {
     recordSet = [];
     let valSequenceCopy = [0, 0, 0, 0, 0, 0, 0, 0];
@@ -64,11 +64,20 @@ const Card = (props) => {
     setValSequence(recordSet);
   };
 
-  const RandomizeHook = () => {};
+  useEffect(() => {
+    if (!isRandomized) {
+      randomizeVal();
+      setIsRandomized(true);
+    }
+  });
 
   const scorePoint = (num) => {
     randomizeVal();
     if (pickedChar[num]) {
+      if (bestScore < score) {
+        setBestScore(score);
+      }
+
       setScore(0);
       pickedCharSet = pickedCharSet.map((e) => {
         return false;

@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Scoreboard = (props) => {
-  const { score } = props;
+  const { score, bestScore } = props;
 
   return (
     <div className="ui centered grid">
-      <div>
-        <h3>Score</h3>
-      </div>
-      <div>{score}</div>
       <div></div>
+      <div>
+        <h3>Score: {score}</h3>
+      </div>
+      <div>
+        <h3>Best Score: {bestScore}</h3>
+      </div>
     </div>
   );
 };
